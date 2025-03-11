@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Basic Commands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #333;
+            color: white;
+        }
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Git Commands</h1>
+
+    <h2>1️⃣ Initializing & Configuration</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>git init</code></td>
+            <td>Initialize a new Git repository</td>
+        </tr>
+        <tr>
+            <td><code>git config --global user.name "Your Name"</code></td>
+            <td>Set global username</td>
+        </tr>
+        <tr>
+            <td><code>git config --global user.email "you@example.com"</code></td>
+            <td>Set global email</td>
+        </tr>
+    </table>
+
+    <h2>2️⃣ Repository & File Management</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>git clone &lt;repo_url&gt;</code></td>
+            <td>Clone an existing repository</td>
+        </tr>
+        <tr>
+            <td><code>git status</code></td>
+            <td>Check the status of your repository</td>
+        </tr>
+        <tr>
+            <td><code>git add &lt;file&gt;</code></td>
+            <td>Stage a specific file</td>
+        </tr>
+        <tr>
+            <td><code>git add .</code></td>
+            <td>Stage all changes</td>
+        </tr>
+        <tr>
+            <td><code>git commit -m "Message"</code></td>
+            <td>Commit staged changes with a message</td>
+        </tr>
+        <tr>
+            <td><code>git rm --cached &lt;file&gt;</code></td>
+            <td>Unstage a file</td>
+        </tr>
+    </table>
+
+    <h2>3️⃣ Branching & Merging</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>git branch</code></td>
+            <td>List all branches</td>
+        </tr>
+        <tr>
+            <td><code>git branch &lt;branch_name&gt;</code></td>
+            <td>Create a new branch</td>
+        </tr>
+        <tr>
+            <td><code>git checkout &lt;branch_name&gt;</code></td>
+            <td>Switch to another branch</td>
+        </tr>
+        <tr>
+            <td><code>git merge &lt;branch_name&gt;</code></td>
+            <td>Merge a branch into the current branch</td>
+        </tr>
+        <tr>
+            <td><code>git branch -d &lt;branch_name&gt;</code></td>
+            <td>Delete a branch</td>
+        </tr>
+    </table>
+
+    <h2>4️⃣ Remote Repositories</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>git remote -v</code></td>
+            <td>Show remote repositories</td>
+        </tr>
+        <tr>
+            <td><code>git push origin main</code></td>
+            <td>Push changes to the main branch</td>
+        </tr>
+        <tr>
+            <td><code>git pull origin main</code></td>
+            <td>Pull latest changes from the main branch</td>
+        </tr>
+        <tr>
+            <td><code>git fetch</code></td>
+            <td>Fetch updates from remote</td>
+        </tr>
+    </table>
+
+    <h2>5️⃣ Undoing Changes</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>git reset --hard</code></td>
+            <td>Reset all changes</td>
+        </tr>
+        <tr>
+            <td><code>git checkout -- &lt;file&gt;</code></td>
+            <td>Discard changes in working directory</td>
+        </tr>
+        <tr>
+            <td><code>git revert &lt;commit_id&gt;</code></td>
+            <td>Undo a specific commit</td>
+        </tr>
+        <tr>
+            <td><code>git stash</code></td>
+            <td>Temporarily save changes</td>
+        </tr>
+        <tr>
+            <td><code>git stash pop</code></td>
+            <td>Restore last stashed changes</td>
+        </tr>
+    </table>
+
+</body>
+</html>
